@@ -2,7 +2,7 @@
 }
 
 html {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
 }
 
 * {
@@ -12,4 +12,72 @@ html {
 body {
     margin: 0;
     font-family: "Rubik", serif;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 40px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+img {
+    margin-top: -130px;
+    object-fit: cover;
+    max-width: 388px;
+}
+
+section {
+    padding-top: 130px;
+    position: relative;
+}
+
+section > * {
+    flex: 1 1 50%;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.text-container {
+    padding: 50px;
+    margin-top: -30px;
+    margin-bottom: 65px;
+    max-width: 388px;
+}
+
+.occupation {
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: rgba(179, 179, 179, 1);
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+p {
+    line-height: 35px;
+    font-weight: 400;
+    color: rgba(179, 179, 179, 1);
+}
+
+.icons {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 0;
+    max-width: min-content;
+    padding: 20px;
+    display: flex;
+    gap: 25px;
+    font-family: "bootstrap-icons", serif;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(71, 234, 78, 1);
+}
+
+.icons > * {
+    width: 16px;
+    height: 16px;
 }
